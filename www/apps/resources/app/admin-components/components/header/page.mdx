@@ -86,4 +86,67 @@ export const Header = ({
 }
 ```
 
+The `Header` component shows a title, and optionally a subtitle and action buttons.
+
+<Note>
+
+The component also uses the [Action Menu](../action-menu/page.mdx) custom component.
+
+</Note>
+
+It accepts the following props:
+
+<TypeList
+  types={[
+    {
+      name: "title",
+      type: "`string`",
+      optional: false,
+      description: "The section's title."
+    },
+    {
+      name: "subtitle",
+      type: "`string`",
+      optional: true,
+      description: "The section's subtitle."
+    },
+    {
+      name: "actions",
+      type: "`object[]`",
+      optional: true,
+      description: "An array of actions to show.",
+      children: [
+        {
+          name: "type",
+          type: "`button` \\| `action-menu` \\| `custom`",
+          optional: false,
+          description: "The type of action to add.\n\n- If its value is `button`, it'll show a button that can have a link or an on-click action.\n\n- If its value is `action-menu`, it'll show a three dot icon with a dropdown of actions.\n\n- If its value is `custom`, you can pass any React nodes to render.",
+        },
+        {
+          name: "props",
+          type: "object",
+          optional: false,
+          description: `This property is only accepted if \`type\` is \`button\` or \`action-menu\`. If \`type\` is \`button\`, it accepts the [props to pass to the UI Button component](https://docs.medusajs.com/components/button). If \`type\` is \`action-menu\`, it accepts the props to pass to the action menu, explaind in [this guide](../action-menu/page.mdx).`,
+        },
+        {
+          name: "link",
+          type: `[LinkProps](https://reactrouter.com/en/main/components/link)`,
+          optional: true,
+          description: "This property is only accepted if `type` is `button`. If provided, a link is rendered inside the button. Its value is the props to pass the `Link` component of `react-router-dom`."
+        },
+        {
+          name: "children",
+          type: "React.ReactNode",
+          optional: true,
+          description: "This property is only accepted if `type` is `custom`. Its content is rendered as part of the actions."
+        }
+      ]
+    }
+  ]}
+/>
+
+---
+
+## Example
+
 
