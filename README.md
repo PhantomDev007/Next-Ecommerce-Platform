@@ -1,75 +1,152 @@
-<p align="center">
-  <a href="https://www.medusajs.com">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://user-images.githubusercontent.com/59018053/229103275-b5e482bb-4601-46e6-8142-244f531cebdb.svg">
-    <source media="(prefers-color-scheme: light)" srcset="https://user-images.githubusercontent.com/59018053/229103726-e5b529a3-9b3f-4970-8a1f-c6af37f087bf.svg">
-    <img alt="Medusa logo" src="https://user-images.githubusercontent.com/59018053/229103726-e5b529a3-9b3f-4970-8a1f-c6af37f087bf.svg">
-    </picture>
-  </a>
-</p>
-<h1 align="center">
-  Medusa
-</h1>
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fsaleor%2Fstorefront&env=NEXT_PUBLIC_SALEOR_API_URL&envDescription=Full%20Saleor%20GraphQL%20endpoint%20URL%2C%20eg%3A%20https%3A%2F%2Fstorefront1.saleor.cloud%2Fgraphql%2F&project-name=my-saleor-storefront&repository-name=my-saleor-storefront&demo-title=Saleor%20Next.js%20Storefront&demo-description=Starter%20pack%20for%20building%20performant%20e-commerce%20experiences%20with%20Saleor.&demo-url=https%3A%2F%2Fstorefront.saleor.io%2F&demo-image=https%3A%2F%2Fstorefront-d5h86wzey-saleorcommerce.vercel.app%2Fopengraph-image.png%3F4db0ee8cf66e90af)
+[![Storefront Demo](https://img.shields.io/badge/VIEW%20DEMO-DFDFDF?style=for-the-badge)](https://storefront.saleor.io)
 
-<h4 align="center">
-  <a href="https://docs.medusajs.com">Documentation</a> |
-  <a href="https://www.medusajs.com">Website</a>
-</h4>
+![Nextjs Storefront](./public/screenshot.png)
 
-<p align="center">
-  Building blocks for digital commerce
-</p>
-<p align="center">
-  <a href="https://github.com/medusajs/medusa/blob/develop/LICENSE">
-    <img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="Medusa is released under the MIT license." />
-  </a>
-  <a href="https://github.com/medusajs/medusa/blob/develop/CONTRIBUTING.md">
-    <img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat" alt="PRs welcome!" />
-  </a>
- <p align="center">
-  <a href="https://twitter.com/intent/follow?screen_name=medusajs">
-    <img src="https://img.shields.io/twitter/follow/medusajs.svg?label=Follow%20@medusajs" alt="Follow @medusajs" />
-  <a href="https://discord.gg/medusajs">
-    <img src="https://img.shields.io/badge/chat-on%20discord-7289DA.svg" alt="Discord Chat" />
-  </a>
-</p>
+<div align="center">
+  <h1>Saleor Next.js Storefront</h1>
+  Starter pack for building performant e-commerce experiences with <a href="https://github.com/saleor/saleor">Saleor</a>.
+</div>
 
-## Getting Started
+<div align="center">
+  <a href="https://saleor.io/">Website</a>
+  <span> • </span>
+  <a href="https://docs.saleor.io/docs/3.x">Docs</a>
+  <span> • </span>
+  <a href="https://github.com/orgs/saleor/projects/45/views/2">Roadmap</a>
+  <span> • </span>
+  <a href="https://twitter.com/getsaleor">Twitter</a>
+  <span> • </span>
+  <a href="https://discord.gg/H52JTZAtSH">Discord</a>
+</div>
 
-Visit the [Quickstart Guide](https://docs.medusajs.com/create-medusa-app) to set up a server.
+<br/>
 
-Visit the [Docs](https://docs.medusajs.com/development/backend/prepare-environment) to learn more about our system requirements.
+<div align="center">
 
-## What is Medusa
+[![Storefront Roadmap](https://img.shields.io/badge/ROADMAP-EFEFEF?style=for-the-badge)](https://github.com/orgs/saleor/projects/45/views/2)
+[![Discord Badge](https://dcbadge.vercel.app/api/server/H52JTZAtSH)](https://discord.gg/H52JTZAtSH)
 
-Medusa is a set of commerce modules and tools that allow you to build rich, reliable, and performant commerce applications without reinventing core commerce logic. The modules can be customized and used to build advanced ecommerce stores, marketplaces, or any product that needs foundational commerce primitives. All modules are open-source and freely available on npm.
+</div>
 
-Learn more about [Medusa’s architecture](https://docs.medusajs.com/development/fundamentals/architecture-overview) and [commerce modules](https://docs.medusajs.com/modules/overview) in the Docs.
+> [!TIP]
+> Questions or issues? Check our [discord](https://discord.gg/H52JTZAtSH) channel for help.
 
-## Roadmap, Upgrades & Plugins
+## Features
 
-You can view the planned, started and completed features in the [Roadmap discussion](https://github.com/medusajs/medusa/discussions/categories/roadmap).
+- **Next.js 14**: File-based routing, React 18, Fast Refresh, Image Optimization and more.
+- **App Router**: Uses React Server Components, Data Cache, and async components.
+- **TypeScript**: Strongly typed codebase and GraphQL payloads with strict mode.
+- **GraphQL best practices**: Uses GraphQL Codegen and `TypedDocumentString` to reduce boilerplate and bundle size.
+- **Customizable CSS**: TailwindCSS can be extended or replaced with an alternative CSS solution.
+- **Tooling included**: Comes with ESLint, Prettier, Husky, Lint Staged, and Codegen preconfigured.
 
-Follow the [Upgrade Guides](https://docs.medusajs.com/upgrade-guides/) to keep your Medusa project up-to-date.
+**Global:**
 
-Check out all [available Medusa plugins](https://medusajs.com/plugins/).
+- Channel switcher and Geo detection (coming soon)
+- Dynamic menu
+- Hamburger menu
+- SEO data
 
-## Community & Contributions
+**Checkout:**
 
-The community and core team are available in [GitHub Discussions](https://github.com/medusajs/medusa/discussions), where you can ask for support, discuss roadmap, and share ideas.
+- Single page checkout (including login)
+- Portable to other frameworks (doesn't use Next.js components)
+- Adyen integration
+- Stripe integration
+- Customer address book
+- Vouchers and Gift Cards
 
-Our [Contribution Guide](https://github.com/medusajs/medusa/blob/develop/CONTRIBUTING.md) describes how to contribute to the codebase and Docs.
+**Product catalog:**
 
-Join our [Discord server](https://discord.com/invite/medusajs) to meet other community members.
+- Categories
+- Variant selection
+- Product attributes
+- Image optimization
 
-## Other channels
+**My account:**
 
-- [GitHub Issues](https://github.com/medusajs/medusa/issues)
-- [Community Discord](https://discord.gg/medusajs)
-- [Twitter](https://twitter.com/medusajs)
-- [LinkedIn](https://www.linkedin.com/company/medusajs)
-- [Medusa Blog](https://medusajs.com/blog/)
+- Order history (coming soon)
+- Order completion
+- Order details
 
-## License
+## Quickstart
 
-Licensed under the [MIT License](https://github.com/medusajs/medusa/blob/develop/LICENSE).
+### 1. Create Saleor backend instance
+To quickly get started with the backend, use a free developer account at [Saleor Cloud](https://cloud.saleor.io/?utm_source=storefront&utm_medium=github).
+
+Alternatively you can [run Saleor locally using docker](https://docs.saleor.io/docs/3.x/setup/docker-compose?utm_source=storefront&utm_medium=github).
+
+### 2. Clone storefront
+
+#### [Option 1] Using Comand line tools
+
+Install or update to the latest version of the [Saleor CLI](https://docs.saleor.io/docs/3.x/cli) by running the following command:
+
+```bash
+npm i -g @saleor/cli@latest
+```
+
+Clone storefront, install dependencies, and connect with the provided Saleor instance hostname
+
+```bash
+saleor storefront create --url https://{SALEOR_HOSTNAME}/graphql/
+```
+
+#### [Option 2] Manual install
+
+Clone repository:
+```bash
+git clone https://github.com/saleor/storefront.git
+```
+
+Copy environment variables from `.env.example` to `.env`:
+
+```bash
+cp .env.example .env
+```
+
+Edit `.env` and set `NEXT_PUBLIC_SALEOR_API_URL` to your Saleor GraphQL endpoint URL, e.g., `https://example.saleor.cloud/graphql/`.
+
+Then, [install `pnpm`](https://pnpm.io/installation) and run the following command to install all dependencies in the repo:
+
+```bash
+pnpm i
+```
+
+
+## Payments
+
+Currently, Saleor Storefront supports payments via the [Saleor Adyen App](https://docs.saleor.io/docs/3.x/developer/app-store/apps/adyen). To install and configure the payment app go to the "Apps" section in the Saleor Dashboard (App Store is only available in Saleor Cloud).
+
+> WARNING:
+> To configure the Adyen App, you must have an account with [Adyen](https://www.adyen.com/).
+
+> NOTE:
+> Saleor Stripe App integration is a work in progress.
+
+## Development
+
+To start the development server, run the following:
+
+```bash
+pnpm dev
+```
+
+The app is now running at `http://localhost:3000`.
+
+> NOTE:
+> Saleor Storefront is a Next.js app. In case you are not familiar with Next.js, we recommend you to read the [Next.js documentation](https://nextjs.org/docs) (make sure you've selected "Using App Router" in the sidebar).
+
+#### GraphQL queries and mutations:
+
+After altering or creating new GraphQL queries in `gql` folder, you need to run the following command to generate types and javascript queries:
+
+```bash
+pnpm run generate
+```
+
+### Preview content changes instantly (Draft Mode)
+
+Visit `http://{your-host}/api/draft` to enable cookies that disable caching to preview catalog and content changes instantly. [Learn more about the Draft Mode in Next.js docs.](https://nextjs.org/docs/app/building-your-application/configuring/draft-mode)
+
