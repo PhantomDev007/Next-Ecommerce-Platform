@@ -13,3 +13,33 @@ export const metadata = {
 Each section in the Medusa Admin has a header with a title, and optionally a subtitle with buttons to perform an action.
 
 ![Example of a header in a section](https://res.cloudinary.com/dza7lstvk/image/upload/v1728288562/Medusa%20Resources/header_dtz4gl.png)
+
+To create a component that uses the same header styling and structure, create the file `src/admin/components/header.tsx` with the following content:
+
+```tsx title="src/admin/components/header.tsx"
+import { Heading, Button, Text } from "@medusajs/ui"
+import React from "react"
+import { Link, LinkProps } from "react-router-dom"
+import { ActionMenu, ActionMenuProps } from "./action-menu"
+
+export type HeadingProps = {
+  title: string
+  subtitle?: string
+  actions?: (
+    {
+      type: "button",
+      props: React.ComponentProps<typeof Button>
+      link?: LinkProps
+    } |  
+    {
+      type: "action-menu"
+      props: ActionMenuProps
+    } |
+    {
+      type: "custom"
+      children: React.ReactNode
+    }
+  )[]
+}
+
+
