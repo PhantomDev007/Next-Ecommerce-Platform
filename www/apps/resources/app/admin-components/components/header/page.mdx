@@ -149,4 +149,43 @@ It accepts the following props:
 
 ## Example
 
+Use the `Header` component in any widget or UI route.
 
+For example, create the widget `src/admin/widgets/product-widget.tsx` with the following content:
+
+```tsx title="src/admin/widgets/product-widget.tsx"
+import { defineWidgetConfig } from "@medusajs/admin-sdk"
+import { Container } from "../components/container"
+import { Header } from "../components/header"
+
+const ProductWidget = () => {
+  return (
+    <Container>
+      <Header 
+        title="Product Widget"
+        subtitle="This is my custom product widget"
+        actions={[
+          {
+            type: "button",
+            props: {
+              children: "Click me",
+              variant: "secondary",
+              onClick: () => {
+                alert("You clicked the button.")
+              }
+            }
+          }
+        ]}
+      />
+    </Container>
+  )
+}
+
+export const config = defineWidgetConfig({
+  zone: "product.details.before",
+})
+
+export default ProductWidget
+```
+
+This widget also uses a [Container](../container/page.mdx) custom component.
