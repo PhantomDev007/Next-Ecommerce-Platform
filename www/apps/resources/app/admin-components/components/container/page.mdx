@@ -25,7 +25,7 @@ type ContainerProps = React.ComponentProps<typeof UiContainer>
 export const Container = (props: ContainerProps) => {
   return (
     <UiContainer {...props} className={clx(
-      "divide-y p-0",
+      "divide-y p-0 md-12 middle container",
       props.className
     )} />
   )
@@ -47,13 +47,13 @@ import { defineWidgetConfig } from "@medusajs/admin-sdk"
 import { Container } from "../components/container"
 import { Header } from "../components/header"
 
-const ProductWidget = () => {
-  return (
-    <Container>
-      <Header title="Product Widget" />
-    </Container>
-  )
-}
+//const ProductWidget = () => {
+//  return (
+//    <Container>
+//     <Header title="Product Widget" />
+//    </Container>
+// )
+//}
 
 export const config = defineWidgetConfig({
   zone: "product.details.before",
